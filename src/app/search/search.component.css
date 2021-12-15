@@ -1,0 +1,85 @@
+@media (max-width: 350px) {
+  .header {
+    text-align: center;
+    background: #fdf3f2;
+    color: black;
+    width: 300px;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 10px;
+    height: 160px;
+  }
+  input {
+    width: 70%;
+    height: 29px;
+    font-size: 17px;
+    margin-right: 29px;
+    margin-left: 29px;
+  }
+  .cardsDesign {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .wish {
+    font-size: 12px;
+  }
+}
+@media (min-width: 351px) {
+  .header {
+    width: 300px;
+    text-align: center;
+    background: #fdf3f2;
+    color: black;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 10px;
+    height: 160px;
+  }
+  input {
+    width: 70%;
+    height: 29px;
+    font-size: 17px;
+    margin-right: 29px;
+    margin-left: 29px;
+  }
+  .cardsDesign {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+  }
+}
+@media (min-width: 401px) {
+  .header {
+    width: 80%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 60px;
+  }
+  input {
+    width: 400px;
+  }
+
+  .cardsDesign {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    width: 90%;
+  }
+}

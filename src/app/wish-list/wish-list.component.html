@@ -1,0 +1,21 @@
+<div class="header">
+  <p>here is your book wishes</p>
+</div>
+
+<div class="cardsDesign">
+  <mat-list role="list">
+    <div *ngFor="let book of books">
+      <button
+        mat-icon-button
+        color="warn"
+        aria-label="Example icon button with a heart icon"
+        (click)="removeFromWish(book)"
+      >
+        <mat-list-item
+          >{{ book.title }}
+          <mat-icon color="warn">delete</mat-icon></mat-list-item
+        >
+      </button>
+    </div>
+  </mat-list>
+</div>

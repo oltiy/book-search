@@ -1,0 +1,30 @@
+<div class="header">
+  <p>Hi {{ userName }}</p>
+
+  <p>Welcome to Book Search</p>
+  <input type="search" [(ngModel)]="query" (ngModelChange)="querychange()" />
+  <button mat-raised-button color="primary" (click)="searchBooks(query)">
+    Search
+  </button>
+</div>
+
+<div class="wish">
+  click on the heart to see your wishlish
+  <button
+    mat-icon-button
+    color="warn"
+    aria-label="Example icon button with a heart icon"
+    (click)="goToWishPage()"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+</div>
+<div class="cardsDesign">
+  <mat-list role="list">
+    <div *ngFor="let book of books">
+      <mat-list-item role="listitem" (click)="openDialog(book)">{{
+        book.title
+      }}</mat-list-item>
+    </div>
+  </mat-list>
+</div>

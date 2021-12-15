@@ -1,0 +1,35 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>Welcone to Google book search</mat-card-title>
+      <mat-card-subtitle
+        >Please insert you username to continue</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input
+              matInput
+              type="email"
+              placeholder="username"
+              formControlName="username"
+            />
+            <mat-error> Username is <strong>required</strong> </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        type="submit"
+        mat-raised-button
+        color="primary"
+        [disabled]="!loginForm.valid"
+      >
+        continue
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</form>
